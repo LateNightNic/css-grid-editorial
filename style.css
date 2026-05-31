@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+:root {
+    --padding: 1rem;
+    --background-color: rgb(183, 185, 245);
+}
+
+html, body {
+     font-family: "EB Garamond", serif;
+     font-optical-sizing: auto;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 5vh 15vw;
+    padding: var(--padding);
+}
+
+.title {
+    grid-column: 1 / span 3;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.byline {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 3;
+    font-size: 1.2rem;
+}
+
+.hero-container {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.hero-image, .second-image {
+    width: 100%;
+    max-height: auto;
+    /* object-fit: cover; */
+}
+
+.second-container {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+blockquote {
+    font-size: 3.4rem;
+    line-height: 4rem;
+    text-align: left;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    padding: var(--padding);
+}
+
+.body-copy-01, .body-copy-02, .body-copy-03 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.body-copy-01 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.body-copy-02 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.body-copy-03 {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+}
