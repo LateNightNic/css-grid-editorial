@@ -92,3 +92,41 @@ blockquote {
     max-height: auto;
     object-fit:cover;
 }
+
+@media (max-width: 768px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        grid-column: auto;
+    }
+
+    .byline {
+        grid-column: auto;
+    }
+
+    .body-copy-01, .body-copy-02 {
+        column-count: auto;
+    }
+
+    .body-copy-01 {
+        grid-column: auto;
+    }
+
+    .body-copy-02 {
+        grid-column: auto;
+    }
+
+    blockquote {
+        grid-column: auto;
+    }
+
+    .hero-container {
+        grid-column: auto;
+    }
+
+    .second-container {
+        grid-column: auto;
+    }
+}
